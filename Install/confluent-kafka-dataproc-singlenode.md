@@ -25,3 +25,29 @@ sudo systemctl restart confluent-zookeeper
 
          Check the status of Zookeeper Services:
 sudo systemctl status confluent-zookeeper
+
+         Start Confluent server
+sudo systemctl start confluent-server.service
+
+         Check Confluent Server Status
+sudo systemctl status confluent-server.service
+
+Start Schema Registry.
+sudo systemctl start confluent-schema-registry
+
+
+Start other Confluent Platform components as desired.
+
+Control Center
+sudo systemctl start confluent-control-center
+
+Kafka Connect
+sudo systemctl start confluent-kafka-connect
+
+Confluent REST Proxy
+sudo systemctl start confluent-kafka-rest
+
+ksqlDB
+sudo systemctl start confluent-ksqldb
+
+
